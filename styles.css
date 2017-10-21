@@ -25,13 +25,16 @@
       #body #firstcontainer #t .selected {
         border: solid black; }
       #body #firstcontainer #t .ta {
+        height: 100%;
         width: 100%; }
         #body #firstcontainer #t .ta:hover {
           border: dashed black; }
         #body #firstcontainer #t .ta .navigation {
           background-color: rgba(0, 0, 0, 0) !important;
           color: black;
-          font-size: 200%;
+          height: 100%;
+          width: 100%;
+          font-size: calc(1.5vmin + 1.5vmax);
           border: none; }
           #body #firstcontainer #t .ta .navigation:active {
             background-color: red; }

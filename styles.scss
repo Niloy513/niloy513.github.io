@@ -33,6 +33,7 @@
   border:solid black;
 }
       .ta{
+        height:100%;
         width:100%;
         &:hover {
           border:dashed black;
@@ -42,7 +43,9 @@
         .navigation{
           background-color: rgba(0,0,0,0) !important ;
           color:black;
-          font-size:200%;
+          height:100%;
+          width:100%;
+          font-size:calc(1.5vmin + 1.5vmax);
           border:none;
           &:active {
             background-color:red;
