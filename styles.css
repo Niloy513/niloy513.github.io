@@ -1,143 +1,58 @@
-@charset "UTF-8";
-* {
-  text-decoration: none !important;
-  text-align: center;
-  color: black;
-  font-family: Georgia, sans-serif;
-  font-margin: 0;
-  font-padding: 0;
-  font-text-decoration: none; }
+/*
+Error: File to import not found or unreadable: scicons.
+        on line 1 of styles.scss
 
-#body {
-  box-sizing: border-box;
-  height: 100vh;
-  width: 100%;
-  background: url("https://i.pinimg.com/originals/f0/73/91/f07391199ff90c1165cddf3c9a18f30f.jpg") no-repeat center center fixed;
-  background-size: cover; }
-  #body #firstcontainer {
-    height: 100%;
-    width: 100%; }
-    #body #firstcontainer #t {
-      height: 10%;
-      display: flex;
-      width: 50%;
-      border: none; }
-      #body #firstcontainer #t .selected {
-        border: solid black; }
-      #body #firstcontainer #t .ta {
-        height: 100%;
-        width: 100%; }
-        #body #firstcontainer #t .ta:hover {
-          border: dashed black; }
-        #body #firstcontainer #t .ta .navigation {
-          background-color: rgba(0, 0, 0, 0) !important;
-          color: black;
-          height: 100%;
-          width: 100%;
-          font-size: calc(1.5vmin + 1.5vmax);
-          border: none; }
-          #body #firstcontainer #t .ta .navigation:active {
-            background-color: red; }
-    #body #firstcontainer .tab-content {
-      display: flex;
-      height: 90%; }
-      #body #firstcontainer .tab-content #A #ame #aboutme {
-        float: left; }
-      #body #firstcontainer .tab-content #A #abme {
-        display: flex;
-        align-items: left; }
-        #body #firstcontainer .tab-content #A #abme #paboutme {
-          font-size: 175%;
-          text-align: left; }
-      #body #firstcontainer .tab-content #A .skills {
-        font-size: 150%;
-        font-weight: bold; }
-      #body #firstcontainer .tab-content #A #list {
-        padding: 1%;
-        font-size: 200%;
-        float: left; }
-      #body #firstcontainer .tab-content #B {
-        height: 100%;
-        width: 100%; }
-        #body #firstcontainer .tab-content #B .intro {
-          margin: 5%;
-          height: 10%;
-          font-size: 2.5vw; }
-        #body #firstcontainer .tab-content #B .secondcontainer {
-          width: 100%;
-          height: 100%;
-          display: flex;
-          flex-direction: column; }
-          #body #firstcontainer .tab-content #B .secondcontainer #second {
-            height: 100%; }
-            #body #firstcontainer .tab-content #B .secondcontainer #second .col {
-              justify-content: center;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              align-content: stretch; }
-              #body #firstcontainer .tab-content #B .secondcontainer #second .col .gallery {
-                width: 100%;
-                height: 100%; }
-                #body #firstcontainer .tab-content #B .secondcontainer #second .col .gallery .link .picture {
-                  width: 100%;
-                  height: 50%; }
-                #body #firstcontainer .tab-content #B .secondcontainer #second .col .gallery .link .desc {
-                  font-size: calc(1vmin + 1vmax);
-                  margin: 1%; }
-      #body #firstcontainer .tab-content #C .social {
-        height: 100%; }
-        #body #firstcontainer .tab-content #C .social .media {
-          width: 100%;
-          height: 50%;
-          display: flex;
-          flex-direction: column; }
-          #body #firstcontainer .tab-content #C .social .media .med {
-            align-items: center;
-            display: inline-flex;
-            height: 100%;
-            width: 100%; }
-          #body #firstcontainer .tab-content #C .social .media .sticker {
-            width: 8vw;
-            height: 8vh;
-            font-size: calc(2em + 1vmin);
-            font-family: "scicons";
-            text-align: center;
-            padding: 0% 0% 0% 0%;
-            text-decoration: none;
-            border: solid;
-            border-radius: 1vw;
-            color: #fff;
-            margin: 0% 5% 0% 0%;
-            transition: background-color .2s linear, color .2s linear; }
-            #body #firstcontainer .tab-content #C .social .media .sticker.icon-facebook {
-              background-color: #3b5998; }
-              #body #firstcontainer .tab-content #C .social .media .sticker.icon-facebook:before {
-                content: ""; }
-              #body #firstcontainer .tab-content #C .social .media .sticker.icon-facebook:hover {
-                background-color: #fff;
-                color: #3b5998; }
-            #body #firstcontainer .tab-content #C .social .media .sticker.icon-linkedin {
-              background-color: #007fb1; }
-              #body #firstcontainer .tab-content #C .social .media .sticker.icon-linkedin:before {
-                content: ""; }
-              #body #firstcontainer .tab-content #C .social .media .sticker.icon-linkedin:hover {
-                background-color: #fff;
-                color: #007fb1; }
-            #body #firstcontainer .tab-content #C .social .media .sticker.icon-stackexchange {
-              background-color: #f47920; }
-              #body #firstcontainer .tab-content #C .social .media .sticker.icon-stackexchange:before {
-                content: ""; }
-              #body #firstcontainer .tab-content #C .social .media .sticker.icon-stackexchange:hover {
-                background-color: #fff;
-                color: #f47920; }
-          #body #firstcontainer .tab-content #C .social .media .pic {
-            font-size: calc(2vmin + 2vmax);
-            margin: 1%; }
-        #body #firstcontainer .tab-content #C .social .intro {
-          margin-top: 5%;
-          height: 25%;
-          font-size: calc(1.5vmin + 1.5vmax);
-          overflow: hidden; }
+1: @import "scicons";
+2: * {
+3:     text-decoration: none !important;
+4:     text-align:center;
+5:     color:black;
+6:     font: {
 
-/*# sourceMappingURL=styles.css.map */
+Backtrace:
+styles.scss:1
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:209:in `each'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:320:in `block in watch'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+E:/programs/git/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: scicons.\A         on line 1 of styles.scss\A \A 1: @import \"scicons\";\A 2: * {\A 3:     text-decoration: none !important;\A 4:     text-align:center;\A 5:     color:black;\A 6:     font: {"; }
